@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ReverseWords {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a sentence: ");
+        String input = scanner.nextLine();
+
+        String output = reverseWords(input);
+        System.out.println("Output: " + output);
+
+        scanner.close();
+    }
+
+    public static String reverseWords(String s) {
+        StringBuilder result = new StringBuilder();
+        String[] words = s.split(" ", -1); // Split including trailing spaces
+
+        for (String word : words) {
+            String reversedWord = new StringBuilder(word).reverse().toString();
+            result.append(reversedWord).append(" ");
+        }
+
+        return result.toString().trim(); // Trim to remove the last space
+    }
+}
