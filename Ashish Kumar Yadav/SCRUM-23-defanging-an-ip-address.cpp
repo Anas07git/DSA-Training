@@ -3,7 +3,7 @@
 using namespace std;
 
 string defangIPaddr(string address) {
-    std::string defanged;
+   string defanged;
     for (char c : address) {
         if (c == '.') {
             defanged += "[.]";
