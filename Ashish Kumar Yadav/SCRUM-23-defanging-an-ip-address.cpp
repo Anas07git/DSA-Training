@@ -19,3 +19,4 @@ int main() {
    string defangedAddress = defangIPaddr(input);
  cout << "Defanged IP address: " << defangedAddress << endl;
     return 0;
+}
