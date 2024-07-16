@@ -13,7 +13,7 @@ public class ReverseWords {
             String reversedWord = new StringBuilder(words[i]).reverse().toString();
             result.append(reversedWord);
             if (i < words.length - 1) {
-                result.append(" "); // Add space only between words
+                result.append(" "); // Add space only between word
             }
         }
 
