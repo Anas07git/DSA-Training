@@ -1,9 +1,10 @@
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 string defangIPaddr(string address) {
-   string defanged;
+    std::string defanged;
     for (char c : address) {
         if (c == '.') {
             defanged += "[.]";
