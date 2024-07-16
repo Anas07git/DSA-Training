@@ -17,6 +17,6 @@ public class ReverseWords {
             }
         }
 
-        return result.toString(); // Return the final result
+        return result.toString(); // Return the final results
     }
 }
