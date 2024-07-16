@@ -21,4 +21,4 @@ def remove_duplicates(nums):
 input_array = [0, 0, 0, 1, 1, 2, 2, 2, 3, 3, 3]
 unique_length = remove_duplicates(input_array)
 print("Length of array with unique elements:", unique_length)
-print("Array after removing duplicates:", input_array[:unique_length])
+
