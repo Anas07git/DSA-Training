@@ -10,6 +10,7 @@ def isMatch(s: str, p: str) -> bool:
     else:
         return first_match and isMatch(s[1:], p[1:])
 
+
 print(isMatch("aa", "a"))    # False
 print(isMatch("aa", "a*"))   # True
 print(isMatch("ab", ".*"))   # True
